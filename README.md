@@ -13,6 +13,7 @@ The original library has been modified in the following ways:
 
 * All test and example code removed. See original library for this code.
 * Solution and project files modified for `Visual Studio 2013` builds using the `v120` compiler.
+* Builds converted to static library and x64 configurations added.
 * Files not contributing or otherwise relevant the Windows build removed, including Lex and Yacc source.
 * Directory structure reorganized for a more traditional layout.
 * Authors file updated and version referred to as libconfig-1.4.9 bis, as there are no source changes.
