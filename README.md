@@ -5,7 +5,9 @@ A simple library for processing structured configuration files.
 
 This is a fork of [libconfig-1.4.9](http://www.hyperrealm.com/libconfig/) by [Mark Lindner and others](AUTHORS).
 
-The purpose of this fork is to provide a library for **Windows packaging**, in support of cross platform projects that want to share this dependency.
+The purpose of this fork is to provide **a library for Windows packaging**, in support of cross platform projects that want to share this dependency.
+
+Static library builds are provided in `Release|Win32`, `Debug|Win32`, `Release|x64`, and `Debug|x64` configurations.
 
 The original library has been modified in the following ways:
 
