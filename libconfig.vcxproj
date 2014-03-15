@@ -87,9 +87,9 @@
       <MinimalRebuild>false</MinimalRebuild>
       <EnableEnhancedInstructionSet>NotSet</EnableEnhancedInstructionSet>
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
-      <PreprocessorDefinitions>LIBCONFIG_STATIC;LIBCONFIGXX_EXPORTS;YY_NO_UNISTD_H;YY_USE_CONST;_STDLIB_H;_WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>LIBCONFIG_STATIC;LIBCONFIGXX_STATIC;YY_NO_UNISTD_H;YY_USE_CONST;_STDLIB_H;_WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <AdditionalIncludeDirectories>include\%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
       <PrecompiledHeader />
       <DisableSpecificWarnings>4244;4290;4996</DisableSpecificWarnings>
     </ClCompile>
@@ -128,9 +128,9 @@
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <MultiProcessorCompilation>true</MultiProcessorCompilation>
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
-      <PreprocessorDefinitions>LIBCONFIG_STATIC;LIBCONFIGXX_EXPORTS;YY_NO_UNISTD_H;YY_USE_CONST;_STDLIB_HT;WIN32;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>LIBCONFIG_STATIC;LIBCONFIGXX_STATIC;YY_NO_UNISTD_H;YY_USE_CONST;_STDLIB_H;WIN32;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <AdditionalIncludeDirectories>include\%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
       <DisableSpecificWarnings>4244;4290;4996</DisableSpecificWarnings>
     </ClCompile>
     <Link>
