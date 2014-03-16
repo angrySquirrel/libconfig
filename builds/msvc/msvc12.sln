@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
 VisualStudioVersion = 12.0.30110.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "libconfig", "libconfig.vcxproj", "{1A234565-926D-49B2-83E4-D56E0C38C9F2}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "libconfig", "libconfig\libconfig.vcxproj", "{1A234565-926D-49B2-83E4-D56E0C38C9F2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
