@@ -9,6 +9,9 @@
       <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
       <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
     </Filter>
+    <Filter Include="resource">
+      <UniqueIdentifier>{76647b5a-f5bd-4884-a5fb-04a8e258655c}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\..\src\grammar.c">
@@ -52,6 +55,9 @@
     <ClInclude Include="..\..\..\include\libconfig.hh">
       <Filter>include</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\..\src\resource\resource.h">
+      <Filter>include</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <None Include="..\..\..\include\libconfig.h++">
@@ -60,5 +66,10 @@
     <None Include="..\..\..\src\libconfigcpp.c++">
       <Filter>src</Filter>
     </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="..\..\..\src\resource\resource.rc">
+      <Filter>resource</Filter>
+    </ResourceCompile>
   </ItemGroup>
 </Project>

@@ -6,7 +6,7 @@
   </ImportGroup>
 
   <PropertyGroup>
-    <_ProjectFileVersion>10.0.30319.1</_ProjectFileVersion>
+    <_ProjectFileVersion>10.0.40219.1</_ProjectFileVersion>
     <_PropertySheetDisplayName>Static Library</_PropertySheetDisplayName>
     <OutDir>$(ProjectDir)..\..\..\lib\$(PlatformName)\</OutDir>
   </PropertyGroup>

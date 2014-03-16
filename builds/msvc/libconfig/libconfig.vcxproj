@@ -130,10 +130,14 @@
     <ClInclude Include="..\..\..\include\scanctx.h" />
     <ClInclude Include="..\..\..\include\scanner.h" />
     <ClInclude Include="..\..\..\include\wincompat.h" />
+    <ClInclude Include="..\..\..\src\resource\resource.h" />
   </ItemGroup>
   <ItemGroup>
     <None Include="..\..\..\include\libconfig.h++" />
     <None Include="..\..\..\src\libconfigcpp.c++" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="..\..\..\src\resource\resource.rc" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
 </Project>
