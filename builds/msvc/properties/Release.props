@@ -6,6 +6,7 @@
     <_PropertySheetDisplayName>Release Configuration</_PropertySheetDisplayName>
     <LinkIncremental>false</LinkIncremental>
     <TargetName>$(ProjectName)</TargetName>
+    <WholeProgramOptimization>false</WholeProgramOptimization>
   </PropertyGroup>
   
   <ItemDefinitionGroup>

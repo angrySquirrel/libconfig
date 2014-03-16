@@ -4,10 +4,11 @@
   <PropertyGroup>
     <_ProjectFileVersion>10.0.30319.1</_ProjectFileVersion>
     <_PropertySheetDisplayName>Common Settings</_PropertySheetDisplayName>
+    <CharacterSet>Unicode</CharacterSet>
     <IntDir>$(ProjectDir)..\..\..\obj\$(PlatformName)\$(Configuration)\$(ProjectName)\</IntDir>
     <LinkIncremental>false</LinkIncremental>
   </PropertyGroup>
-  
+
   <ItemDefinitionGroup>
     <ClCompile>
       <AdditionalIncludeDirectories>..\..\..\include\%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
