@@ -7,13 +7,12 @@ This is a fork of [libconfig-1.4.9](http://www.hyperrealm.com/libconfig/) by [Ma
 
 The purpose of this fork is to provide **a library for Windows packaging**, in support of cross platform projects that want to share this dependency.
 
-Static library builds are provided in `Release|Win32`, `Debug|Win32`, `Release|x64`, and `Debug|x64` configurations.
+Static and dynamic library builds are provided for all combinations of release and debug for x86 and x64.
 
 The original library has been modified in the following ways:
 
 * All test and example code removed. See original library for this code.
 * Solution and project files modified for `Visual Studio 2013` builds using the `v120` compiler.
-* Builds converted to static library and x64 configurations added.
 * Files not contributing or otherwise relevant the Windows build removed, including Lex and Yacc source.
 * Directory structure reorganized for a more traditional layout.
 * Authors file updated and version referred to as libconfig-1.4.9 bis, as there are no source changes.
