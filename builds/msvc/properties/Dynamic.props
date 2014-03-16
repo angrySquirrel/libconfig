@@ -16,8 +16,8 @@
       <PreprocessorDefinitions>_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
     <Link>
-      <AdditionalLibraryDirectories>$(TargetDir)../../lib/$(PlatformName);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
-      <ImportLibrary>$(TargetDir)../../lib/$(PlatformName)/$(TargetName).lib</ImportLibrary>
+      <AdditionalLibraryDirectories>$(TargetDir)../../lib/$(PlatformName)%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <ImportLibrary>$(TargetDir)../../lib/$(PlatformName)/$(TargetName)_stub.lib</ImportLibrary>
       <SubSystem>Windows</SubSystem>
     </Link>
   </ItemDefinitionGroup>
