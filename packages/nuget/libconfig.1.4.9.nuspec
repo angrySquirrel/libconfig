@@ -1,25 +1,23 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<package xmlns="http://schemas.microsoft.com/packaging/2013/01/nuspec.xsd">
-    <metadata minClientVersion="2.5">
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+    <metadata>
         <id>libconfig</id>
         <version>1.4.9</version>
         <title>A simple library for processing structured configuration files.</title>
         <authors>Mark Lindner,Daniel Marjamäki,Andrew Tytula,Glenn Herteg,Eric Voskuil</authors>
         <owners>Eric Voskuil</owners>
-        <licenseUrl>https://github.com/evoskuil/libconfig/blob/master/COPYING.LIB</licenseUrl>
+        <licenseUrl>https://raw.github.com/evoskuil/libconfig/master/COPYING</licenseUrl>
         <projectUrl>https://github.com/evoskuil/libconfig</projectUrl>
         <iconUrl>http://a.fsdn.com/fm/images/fm_logo.png?1386111726</iconUrl>
         <requireLicenseAcceptance>true</requireLicenseAcceptance>
         <developmentDependency>true</developmentDependency>
-        <description>libconfig is a compact, portable library for reading, manipulating, and writing structured configuration files. The library includes bindings for both the C and C++ languages, and works on Linux, Mac OS X, and other POSIX-compliant operating systems, as well as Windows. A complete manual with API documentation is included.
+        <description>libconfig is a compact, portable library for reading, manipulating, and writing structured configuration files. A complete manual with API documentation is available.
 
 Libconfig is distributed under the terms of the GNU Lesser General Public License. This license was chosen over the standard GNU license to allow libconfig to be used with non-free programs.</description>
-        <summary>This is a fork of libconfig-1.4.9 by Mark Lindner and others. The purpose of this fork is to provide a library for Windows packaging, in support of cross platform projects.</summary>
+        <summary>This is a fork of libconfig-1.4.9. The purpose of this fork is to provide a library for Windows packaging, in support of cross platform projects.</summary>
         <releaseNotes>http://freecode.com/projects/libconfigduo/releases</releaseNotes>
-        <copyright>Copyright (C) 2005-2010  Mark A Lindner</copyright>
+        <copyright>(c) 2005-2010  Mark A Lindner</copyright>
         <tags>native, libconfig, config, POSIX, C, C++</tags>
     </metadata>
-    <files>
-        <file src="include\libconfig.h++" target="include\libconfig.h++" />
-    </files>
+    <files />
 </package>
