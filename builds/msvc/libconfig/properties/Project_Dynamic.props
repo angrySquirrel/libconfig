@@ -2,18 +2,18 @@
 <Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   
   <ImportGroup Label="PropertySheets">
-    <Import Project="Static.props" />
-    <Import Project="Solution_Common.props" />
+    <Import Project="Project_Common.props" />
+    <Import Project="..\..\properties\Dynamic.props" />
   </ImportGroup>
   
   <PropertyGroup>
     <_ProjectFileVersion>10.0.40219.1</_ProjectFileVersion>
-    <_PropertySheetDisplayName>LibConfig Static Settings</_PropertySheetDisplayName>
+    <_PropertySheetDisplayName>LibConfig Dynamic Settings</_PropertySheetDisplayName>
   </PropertyGroup>
   
   <ItemDefinitionGroup>
     <ClCompile>
-      <PreprocessorDefinitions>LIBCONFIG_STATIC;LIBCONFIGXX_STATIC;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>LIBCONFIG_EXPORTS;LIBCONFIGXX_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
   </ItemDefinitionGroup>
   

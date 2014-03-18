@@ -8,7 +8,6 @@
   <PropertyGroup>
     <_ProjectFileVersion>10.0.40219.1</_ProjectFileVersion>
     <_PropertySheetDisplayName>Executable Program</_PropertySheetDisplayName>
-    <OutDir>$(ProjectDir)..\..\..\bin\$(PlatformName)\</OutDir>
   </PropertyGroup>
   
   <ItemDefinitionGroup>
@@ -16,7 +15,6 @@
       <PreprocessorDefinitions>_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
     <Link>
-      <AdditionalLibraryDirectories>$(TargetDir)../../lib/$(PlatformName);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <SubSystem>Console</SubSystem>
     </Link>
   </ItemDefinitionGroup>
