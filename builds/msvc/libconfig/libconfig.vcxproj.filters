@@ -56,7 +56,7 @@
       <Filter>include</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\src\resource\resource.h">
-      <Filter>include</Filter>
+      <Filter>resource</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

@@ -2,11 +2,11 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2013/01/nuspec.xsd">
     <metadata minClientVersion="2.5">
         <id>libconfig</id>
-        <version>1.4.9.1</version>
+        <version>1.4.9.2</version>
         <title>A simple library for processing structured configuration files.</title>
         <authors>Mark Lindner,Daniel Marjamäki,Andrew Tytula,Glenn Herteg,Eric Voskuil</authors>
         <owners>Eric Voskuil</owners>
-        <licenseUrl>https://github.com/evoskuil/libconfig/blob/master/COPYING</licenseUrl>
+        <licenseUrl>https://raw.github.com/evoskuil/libconfig/master/COPYING</licenseUrl>
         <projectUrl>https://github.com/evoskuil/libconfig</projectUrl>
         <iconUrl>http://a.fsdn.com/fm/images/fm_logo.png?1386111726</iconUrl>
         <requireLicenseAcceptance>true</requireLicenseAcceptance>
@@ -19,4 +19,19 @@ Libconfig is distributed under the terms of the GNU Lesser General Public Licens
         <copyright>Copyright (C) 2005-2010  Mark A Lindner</copyright>
         <tags>native libconfig config POSIX C C++</tags>
     </metadata>
+    <files>
+        <file src="..\..\bin\Win32\libconfig.dll" target="bin\Win32\libconfig.dll" />
+        <file src="..\..\bin\Win32\libconfig.lib" target="bin\Win32\libconfig.lib" />
+        <file src="..\..\bin\Win32\libconfig.pdb" target="bin\Win32\libconfig.pdb" />
+        <file src="..\..\bin\Win32\libconfig_d.dll" target="bin\Win32\libconfig_d.dll" />
+        <file src="..\..\bin\Win32\libconfig_d.lib" target="bin\Win32\libconfig_d.lib" />
+        <file src="..\..\bin\Win32\libconfig_d.pdb" target="bin\Win32\libconfig_d.pdb" />
+        <file src="..\..\bin\x64\libconfig.dll" target="bin\x64\libconfig.dll" />
+        <file src="..\..\bin\x64\libconfig.lib" target="bin\x64\libconfig.lib" />
+        <file src="..\..\bin\x64\libconfig.pdb" target="bin\x64\libconfig.pdb" />
+        <file src="..\..\bin\x64\libconfig_d.dll" target="bin\x64\libconfig_d.dll" />
+        <file src="..\..\bin\x64\libconfig_d.lib" target="bin\x64\libconfig_d.lib" />
+        <file src="..\..\bin\x64\libconfig_d.pdb" target="bin\x64\libconfig_d.pdb" />
+        <file src="include\libconfig.h++" target="include\libconfig.h++" />
+    </files>
 </package>
