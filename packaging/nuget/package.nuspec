@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+#################################################################
+#   GENERATED SOURCE CODE, DO NOT EDIT EXCEPT EXPERIMENTALLY    #
+#################################################################
+-->
+<package xmlns="http://schemas.microsoft.com/packaging/2013/01/nuspec.xsd">
+    <metadata minClientVersion="2.5">
+        <id>libconfig</id>
+        <version>1.4.9.2</version>
+        <title>A simple library for processing structured configuration files.</title>
+        <authors>Mark Lindner,Daniel Marjamäki,Andrew Tytula,Glenn Herteg,Eric Voskuil</authors>
+        <owners>Eric Voskuil</owners>
+        <licenseUrl>https://raw.github.com/evoskuil/libconfig/master/COPYING</licenseUrl>
+        <projectUrl>https://github.com/evoskuil/libconfig</projectUrl>
+        <iconUrl>http://a.fsdn.com/fm/images/fm_logo.png?1386111726</iconUrl>
+        <requireLicenseAcceptance>true</requireLicenseAcceptance>
+        <developmentDependency>true</developmentDependency>
+        <description>Libconfig is a compact, portable library for reading, manipulating, and writing structured configuration files. The library includes bindings for both the C and C++ languages, and works on Linux, Mac OS X, and other POSIX-compliant operating systems, as well as Windows. A complete manual with API documentation is included.</description>
+        <summary>This is a fork of libconfig-1.4.9 by Mark Lindner and others. The purpose of this fork is to provide a library for Windows packaging, in support of cross platform projects that want to share this depe</summary>
+        <releaseNotes>http://freecode.com/projects/libconfigduo/releases</releaseNotes>
+        <copyright>(c) 2005-2010 Mark A Lindner</copyright>
+        <tags>native libconfig config POSIX C C++</tags>
+    </metadata>
+    <files>
+        <!-- bin -->
+        
+        <!-- x86 Dynamic libraries (.dll) -->
+        <file src="..\..\bin\Win32\libconfig.dll" target="build\native\bin\x86\libconfig-v120-mt-1_4_9_2.dll" />
+        <file src="..\..\bin\Win32\libconfig_d.dll" target="build\native\bin\x86\libconfig-v120-mt-gd-1_4_9_2.dll" />
+        
+        <!-- x86 Debugging symbols (.pdb) -->
+        <file src="..\..\bin\Win32\libconfig.pdb" target="build\native\bin\x86\libconfig-v120-mt-1_4_9_2.pdb" />
+        <file src="..\..\bin\Win32\libconfig_d.pdb" target="build\native\bin\x86\libconfig-v120-mt-gd-1_4_9_2.pdb" />
+        
+        <!-- x86 Static libraries (.lib) -->
+        <file src="..\..\bin\Win32\libconfig.lib" target="build\native\bin\x86\libconfig-v120-mt-s-1_4_9_2.lib" />
+        <file src="..\..\bin\Win32\libconfig_d.lib" target="build\native\bin\x86\libconfig-v120-mt-sgd-1_4_9_2.lib" />
+                
+        <!-- x64 Dynamic libraries (.dll) -->
+        <file src="..\..\bin\x64\libconfig.dll" target="build\native\bin\x64\libconfig-v120-mt-1_4_9_2.dll" />
+        <file src="..\..\bin\x64\libconfig_d.dll" target="build\native\bin\x64\libconfig-v120-mt-gd-1_4_9_2.dll" />
+        
+        <!-- x64 Debugging symbols (.pdb) -->
+        <file src="..\..\bin\x64\libconfig.pdb" target="build\native\bin\x64\libconfig-v120-mt-1_4_9_2.pdb" />
+        <file src="..\..\bin\x64\libconfig_d.pdb" target="build\native\bin\x64\libconfig-v120-mt-gd-1_4_9_2.pdb" />
+        
+        <!-- x64 Static libraries (.lib) -->
+        <file src="..\..\bin\x64\libconfig.lib" target="build\native\bin\x64\libconfig-v120-mt-s-1_4_9_2.lib" />
+        <file src="..\..\bin\x64\libconfig_d.lib" target="build\native\bin\x64\libconfig-v120-mt-sgd-1_4_9_2.lib" />
+        
+        <!-- lib -->
+        
+        <!-- x86 Import libraries (.lib) -->
+        <file src="..\..\lib\Win32\libconfig.lib" target="build\native\lib\x86\libconfig-v120-mt-1_4_9_2.lib" />
+        <file src="..\..\lib\Win32\libconfig_d.lib" target="build\native\lib\x86\libconfig-v120-mt-gd-1_4_9_2.lib" />
+        
+        <!-- x86 Export libraries (.lib) -->
+        <file src="..\..\lib\Win32\libconfig.exp" target="build\native\lib\x86\libconfig-v120-mt-1_4_9_2.exp" />
+        <file src="..\..\lib\Win32\libconfig_d.exp" target="build\native\lib\x86\libconfig-v120-mt-gd-1_4_9_2.exp" />
+ 
+        <!-- x64 Import libraries (.lib) -->
+        <file src="..\..\lib\x64\libconfig.lib" target="build\native\lib\x64\libconfig-v120-mt-1_4_9_2.lib" />
+        <file src="..\..\lib\x64\libconfig_d.lib" target="build\native\lib\x64\libconfig-v120-mt-gd-1_4_9_2.lib" />
+        
+        <!-- x64 Export libraries (.lib) -->
+        <file src="..\..\lib\x64\libconfig.exp" target="build\native\lib\x64\libconfig-v120-mt-1_4_9_2.exp" />
+        <file src="..\..\lib\x64\libconfig_d.exp" target="build\native\lib\x64\libconfig-v120-mt-gd-1_4_9_2.exp" />
+        
+        <!-- include -->
+        
+        <!-- Includes (.h) -->
+        <file src="..\..\include\libconfig.h" target="build\native\include" />
+        <file src="..\..\include\libconfig.hh" target="build\native\include" />
+        <file src="..\..\include\libconfig.h++" target="build\native\include" />
+        
+        <!-- docs -->
+        
+        <!-- Documents (.*) -->
+        <!--<file src="..\..\docs\*" target="build\native\docs" />-->
+    </files>
+<!--
+#################################################################
+#   GENERATED SOURCE CODE, DO NOT EDIT EXCEPT EXPERIMENTALLY    #
+#################################################################
+-->
+</package>

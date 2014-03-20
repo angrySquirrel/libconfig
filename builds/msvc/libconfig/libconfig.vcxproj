@@ -136,6 +136,10 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="..\..\..\include\libconfig.h++" />
+    <None Include="..\..\..\packaging\nuget\package.bat" />
+    <None Include="..\..\..\packaging\nuget\package.config" />
+    <None Include="..\..\..\packaging\nuget\package.gsl" />
+    <None Include="..\..\..\packaging\nuget\package.nuspec" />
     <None Include="..\..\..\src\libconfigcpp.c++" />
   </ItemGroup>
   <ItemGroup>

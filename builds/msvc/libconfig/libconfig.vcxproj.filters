@@ -12,6 +12,9 @@
     <Filter Include="resource">
       <UniqueIdentifier>{76647b5a-f5bd-4884-a5fb-04a8e258655c}</UniqueIdentifier>
     </Filter>
+    <Filter Include="packaging">
+      <UniqueIdentifier>{59717981-3d22-48a0-9315-c12e692fe282}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\..\src\grammar.c">
@@ -65,6 +68,18 @@
     </None>
     <None Include="..\..\..\src\libconfigcpp.c++">
       <Filter>src</Filter>
+    </None>
+    <None Include="..\..\..\packaging\nuget\package.bat">
+      <Filter>packaging</Filter>
+    </None>
+    <None Include="..\..\..\packaging\nuget\package.config">
+      <Filter>packaging</Filter>
+    </None>
+    <None Include="..\..\..\packaging\nuget\package.gsl">
+      <Filter>packaging</Filter>
+    </None>
+    <None Include="..\..\..\packaging\nuget\package.nuspec">
+      <Filter>packaging</Filter>
     </None>
   </ItemGroup>
   <ItemGroup>
