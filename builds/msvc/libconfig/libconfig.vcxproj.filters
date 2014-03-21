@@ -81,10 +81,18 @@
     <None Include="..\..\..\packaging\nuget\package.nuspec">
       <Filter>packaging</Filter>
     </None>
+    <None Include="..\..\..\packaging\nuget\package.targets">
+      <Filter>packaging</Filter>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="..\..\..\src\resource\resource.rc">
       <Filter>resource</Filter>
     </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Xml Include="..\..\..\packaging\nuget\uiextension.xml">
+      <Filter>packaging</Filter>
+    </Xml>
   </ItemGroup>
 </Project>
