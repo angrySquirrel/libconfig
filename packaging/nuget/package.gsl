@@ -68,7 +68,7 @@
         <file src="..\\..\\lib\\Win32\\$(package.target).lib" target="build\\native\\lib\\x86\\$(package.target)-$(package.platformtoolkit)-mt-$(package.pathversion).lib" />
         <file src="..\\..\\lib\\Win32\\$(package.target)_d.lib" target="build\\native\\lib\\x86\\$(package.target)-$(package.platformtoolkit)-mt-gd-$(package.pathversion).lib" />
         
-        <!-- x86 Export libraries (.lib) -->
+        <!-- x86 Export libraries (.exp) -->
         <file src="..\\..\\lib\\Win32\\$(package.target).exp" target="build\\native\\lib\\x86\\$(package.target)-$(package.platformtoolkit)-mt-$(package.pathversion).exp" />
         <file src="..\\..\\lib\\Win32\\$(package.target)_d.exp" target="build\\native\\lib\\x86\\$(package.target)-$(package.platformtoolkit)-mt-gd-$(package.pathversion).exp" />
  
@@ -76,7 +76,7 @@
         <file src="..\\..\\lib\\x64\\$(package.target).lib" target="build\\native\\lib\\x64\\$(package.target)-$(package.platformtoolkit)-mt-$(package.pathversion).lib" />
         <file src="..\\..\\lib\\x64\\$(package.target)_d.lib" target="build\\native\\lib\\x64\\$(package.target)-$(package.platformtoolkit)-mt-gd-$(package.pathversion).lib" />
         
-        <!-- x64 Export libraries (.lib) -->
+        <!-- x64 Export libraries (.exp) -->
         <file src="..\\..\\lib\\x64\\$(package.target).exp" target="build\\native\\lib\\x64\\$(package.target)-$(package.platformtoolkit)-mt-$(package.pathversion).exp" />
         <file src="..\\..\\lib\\x64\\$(package.target)_d.exp" target="build\\native\\lib\\x64\\$(package.target)-$(package.platformtoolkit)-mt-gd-$(package.pathversion).exp" />
         
