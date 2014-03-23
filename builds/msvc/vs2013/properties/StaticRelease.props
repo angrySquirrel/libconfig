@@ -2,19 +2,20 @@
 <Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   
   <ImportGroup Label="PropertySheets">
-    <Import Project="Common.props" />
+    <Import Project="Static.props" />
+    <Import Project="Release.props" />
   </ImportGroup>
-  
+
   <PropertyGroup>
     <_ProjectFileVersion>10.0.40219.1</_ProjectFileVersion>
-    <_PropertySheetDisplayName>Dynamic Link Library</_PropertySheetDisplayName>
+    <_PropertySheetDisplayName>Static Release Library</_PropertySheetDisplayName>
   </PropertyGroup>
-  
+
   <ItemDefinitionGroup>
     <ClCompile>
-      <!--<PreprocessorDefinitions>_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>-->
-      <PreprocessorDefinitions>_DLL;_WINDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <!-- Linking CRT statically when building a static library is conventional. -->
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
     </ClCompile>
   </ItemDefinitionGroup>
-  
+
 </Project>

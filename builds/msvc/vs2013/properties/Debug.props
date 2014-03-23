@@ -4,9 +4,10 @@
   <PropertyGroup>
     <_ProjectFileVersion>10.0.40219.1</_ProjectFileVersion>
     <_PropertySheetDisplayName>Debug Configuration</_PropertySheetDisplayName>
+    <!-- RootNamespace is used to deconflict output files from differing project versions. -->
+    <IntDir>$(ProjectDir)..\..\..\..\obj\$(PlatformName)\Debug\$(RootNamespace)\</IntDir>
+    <OutDir>$(ProjectDir)..\..\..\..\bin\$(PlatformName)\Debug\$(RootNamespace)\</OutDir>
     <LinkIncremental>true</LinkIncremental>
-    <TargetName>$(RootNamespace)_d</TargetName>
-    <WholeProgramOptimization>false</WholeProgramOptimization>
   </PropertyGroup>
   
   <ItemDefinitionGroup>
@@ -16,11 +17,13 @@
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <Optimization>Disabled</Optimization>
       <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ResourceCompile>
+    <Link>
+      <ImportLibrary>$(ProjectDir)..\..\..\..\bin\$(PlatformName)\Debug\$(RootNamespace)\$(TargetName).imp.lib</ImportLibrary>
+    </Link>
   </ItemDefinitionGroup>
   
 </Project>

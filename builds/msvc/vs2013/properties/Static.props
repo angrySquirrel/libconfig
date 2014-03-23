@@ -2,19 +2,18 @@
 <Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   
   <ImportGroup Label="PropertySheets">
-    <Import Project="Project_Common.props" />
-    <Import Project="..\..\properties\Static.props" />
+    <Import Project="Common.props" />
   </ImportGroup>
   
   <PropertyGroup>
     <_ProjectFileVersion>10.0.40219.1</_ProjectFileVersion>
-    <_PropertySheetDisplayName>LibConfig Static Settings</_PropertySheetDisplayName>
+    <_PropertySheetDisplayName>Static Library</_PropertySheetDisplayName>
   </PropertyGroup>
   
   <ItemDefinitionGroup>
     <ClCompile>
-      <PreprocessorDefinitions>LIBCONFIG_STATIC;LIBCONFIGXX_STATIC;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
   </ItemDefinitionGroup>
-  
+
 </Project>
