@@ -14,7 +14,7 @@
 -->
 <package xmlns="http://schemas.microsoft.com/packaging/2013/01/nuspec.xsd">
     <metadata minClientVersion="2.5">
-        <id>libconfig</id>
+        <id>$(package.id)</id>
         <version>$(package.version)</version>
         <title>Libconfig (v120)</title>
         <authors>Mark Lindner, Daniel Marjamäki, Andrew Tytula, Glenn Herteg, Eric Voskuil</authors>
@@ -127,7 +127,7 @@
       <AdditionalLibraryDirectories>$\(MSBuildThisFileDirectory)bin\\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
     </Link>
   </ItemDefinitionGroup>
-  <ItemDefinitionGroup Condition="'$\(Linkage-$(package.target))' == 'static'">
+  <ItemDefinitionGroup Condition="'$\(Linkage-$(package.target))' == 'static' Or '$\(Linkage-$(package.target))' == 'ltcg'">
     <ClCompile>
       <PreprocessorDefinitions>LIBCONFIG_STATIC;LIBCONFIGXX_STATIC;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>

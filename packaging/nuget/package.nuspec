@@ -6,7 +6,7 @@
 -->
 <package xmlns="http://schemas.microsoft.com/packaging/2013/01/nuspec.xsd">
     <metadata minClientVersion="2.5">
-        <id>libconfig</id>
+        <id>pdcurses</id>
         <version>1.4.9.2</version>
         <title>Libconfig (v120)</title>
         <authors>Mark Lindner, Daniel Marjamäki, Andrew Tytula, Glenn Herteg, Eric Voskuil</authors>

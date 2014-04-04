@@ -20,7 +20,7 @@
       <AdditionalLibraryDirectories>$(MSBuildThisFileDirectory)bin\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
     </Link>
   </ItemDefinitionGroup>
-  <ItemDefinitionGroup Condition="'$(Linkage-libconfig)' == 'static'">
+  <ItemDefinitionGroup Condition="'$(Linkage-libconfig)' == 'static' Or '$(Linkage-libconfig)' == 'ltcg'">
     <ClCompile>
       <PreprocessorDefinitions>LIBCONFIG_STATIC;LIBCONFIGXX_STATIC;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
