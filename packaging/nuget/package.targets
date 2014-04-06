@@ -29,66 +29,66 @@
   <!-- static libraries -->
   <ItemDefinitionGroup Condition="'$(Platform)' == 'Win32' And ('$(PlatformToolset)' == 'v120' Or '$(PlatformToolset)' == 'CTP_Nov2013') And '$(Linkage-libconfig)' == 'static' And $(Configuration.IndexOf('Release')) != -1">
     <Link>
-      <AdditionalDependencies>libconfig-x86-v120-mt-s-1_4_9_2.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>libconfig-x86-v120-mt-s-1_4_9_3.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Platform)' == 'Win32' And ('$(PlatformToolset)' == 'v120' Or '$(PlatformToolset)' == 'CTP_Nov2013') And '$(Linkage-libconfig)' == 'static' And $(Configuration.IndexOf('Debug')) != -1">
     <Link>
-      <AdditionalDependencies>libconfig-x86-v120-mt-sgd-1_4_9_2.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>libconfig-x86-v120-mt-sgd-1_4_9_3.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Platform)' == 'x64' And ('$(PlatformToolset)' == 'v120' Or '$(PlatformToolset)' == 'CTP_Nov2013') And '$(Linkage-libconfig)' == 'static' And $(Configuration.IndexOf('Release')) != -1">
     <Link>
-      <AdditionalDependencies>libconfig-x64-v120-mt-s-1_4_9_2.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>libconfig-x64-v120-mt-s-1_4_9_3.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Platform)' == 'x64' And ('$(PlatformToolset)' == 'v120' Or '$(PlatformToolset)' == 'CTP_Nov2013') And '$(Linkage-libconfig)' == 'static' And $(Configuration.IndexOf('Debug')) != -1">
     <Link>
-      <AdditionalDependencies>libconfig-x64-v120-mt-sgd-1_4_9_2.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>libconfig-x64-v120-mt-sgd-1_4_9_3.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
 
   <!-- static ltcg libraries -->
   <ItemDefinitionGroup Condition="'$(Platform)' == 'Win32' And ('$(PlatformToolset)' == 'v120' Or '$(PlatformToolset)' == 'CTP_Nov2013') And '$(Linkage-libconfig)' == 'ltcg' And $(Configuration.IndexOf('Release')) != -1">
     <Link>
-      <AdditionalDependencies>libconfig-x86-v120-mt-s-1_4_9_2.ltcg.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>libconfig-x86-v120-mt-s-1_4_9_3.ltcg.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Platform)' == 'Win32' And ('$(PlatformToolset)' == 'v120' Or '$(PlatformToolset)' == 'CTP_Nov2013') And '$(Linkage-libconfig)' == 'ltcg' And $(Configuration.IndexOf('Debug')) != -1">
     <Link>
-      <AdditionalDependencies>libconfig-x86-v120-mt-sgd-1_4_9_2.ltcg.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>libconfig-x86-v120-mt-sgd-1_4_9_3.ltcg.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Platform)' == 'x64' And ('$(PlatformToolset)' == 'v120' Or '$(PlatformToolset)' == 'CTP_Nov2013') And '$(Linkage-libconfig)' == 'ltcg' And $(Configuration.IndexOf('Release')) != -1">
     <Link>
-      <AdditionalDependencies>libconfig-x64-v120-mt-s-1_4_9_2.ltcg.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>libconfig-x64-v120-mt-s-1_4_9_3.ltcg.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Platform)' == 'x64' And ('$(PlatformToolset)' == 'v120' Or '$(PlatformToolset)' == 'CTP_Nov2013') And '$(Linkage-libconfig)' == 'ltcg' And $(Configuration.IndexOf('Debug')) != -1">
     <Link>
-      <AdditionalDependencies>libconfig-x64-v120-mt-sgd-1_4_9_2.ltcg.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>libconfig-x64-v120-mt-sgd-1_4_9_3.ltcg.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   
   <!-- dynamic import libraries -->
   <ItemDefinitionGroup Condition="'$(Platform)' == 'Win32' And ('$(PlatformToolset)' == 'v120' Or '$(PlatformToolset)' == 'CTP_Nov2013') And '$(Linkage-libconfig)' == '' And $(Configuration.IndexOf('Release')) != -1">
     <Link>
-      <AdditionalDependencies>libconfig-x86-v120-mt-1_4_9_2.imp.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>libconfig-x86-v120-mt-1_4_9_3.imp.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Platform)' == 'Win32' And ('$(PlatformToolset)' == 'v120' Or '$(PlatformToolset)' == 'CTP_Nov2013') And '$(Linkage-libconfig)' == '' And $(Configuration.IndexOf('Debug')) != -1">
     <Link>
-      <AdditionalDependencies>libconfig-x86-v120-mt-gd-1_4_9_2.imp.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>libconfig-x86-v120-mt-gd-1_4_9_3.imp.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Platform)' == 'x64' And ('$(PlatformToolset)' == 'v120' Or '$(PlatformToolset)' == 'CTP_Nov2013') And '$(Linkage-libconfig)' == '' And $(Configuration.IndexOf('Release')) != -1">
     <Link>
-      <AdditionalDependencies>libconfig-x64-v120-mt-1_4_9_2.imp.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>libconfig-x64-v120-mt-1_4_9_3.imp.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Platform)' == 'x64' And ('$(PlatformToolset)' == 'v120' Or '$(PlatformToolset)' == 'CTP_Nov2013') And '$(Linkage-libconfig)' == '' And $(Configuration.IndexOf('Debug')) != -1">
     <Link>
-      <AdditionalDependencies>libconfig-x64-v120-mt-gd-1_4_9_2.imp.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>libconfig-x64-v120-mt-gd-1_4_9_3.imp.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
 
@@ -97,26 +97,26 @@
   <Target Name="libconfig_AfterBuild_Win32_v120_Dynamic_Release"
           Condition="'$(Platform)' == 'Win32' And ('$(PlatformToolset)' == 'v120' Or '$(PlatformToolset)' == 'CTP_Nov2013') And '$(Linkage-libconfig)' == '' And $(Configuration.IndexOf('Release')) != -1"
           AfterTargets="libconfig_AfterBuild">
-    <Copy SourceFiles="$(MSBuildThisFileDirectory)bin\libconfig-x86-v120-mt-1_4_9_2.dll" DestinationFolder="$(TargetDir)" SkipUnchangedFiles="true" />
-    <Copy SourceFiles="$(MSBuildThisFileDirectory)bin\libconfig-x86-v120-mt-1_4_9_2.pdb" DestinationFolder="$(TargetDir)" SkipUnchangedFiles="true" />
+    <Copy SourceFiles="$(MSBuildThisFileDirectory)bin\libconfig-x86-v120-mt-1_4_9_3.dll" DestinationFolder="$(TargetDir)" SkipUnchangedFiles="true" />
+    <!--<Copy SourceFiles="$(MSBuildThisFileDirectory)bin\libconfig-x86-v120-mt-1_4_9_3.pdb" DestinationFolder="$(TargetDir)" SkipUnchangedFiles="true" />-->
   </Target>
   <Target Name="libconfig_AfterBuild_Win32_v120_Dynamic_Debug"
           Condition="'$(Platform)' == 'Win32' And ('$(PlatformToolset)' == 'v120' Or '$(PlatformToolset)' == 'CTP_Nov2013') And '$(Linkage-libconfig)' == '' And $(Configuration.IndexOf('Debug')) != -1"
           AfterTargets="libconfig_AfterBuild">
-    <Copy SourceFiles="$(MSBuildThisFileDirectory)bin\libconfig-x86-v120-mt-gd-1_4_9_2.dll" DestinationFolder="$(TargetDir)" SkipUnchangedFiles="true" />
-    <Copy SourceFiles="$(MSBuildThisFileDirectory)bin\libconfig-x86-v120-mt-gd-1_4_9_2.pdb" DestinationFolder="$(TargetDir)" SkipUnchangedFiles="true" />
+    <Copy SourceFiles="$(MSBuildThisFileDirectory)bin\libconfig-x86-v120-mt-gd-1_4_9_3.dll" DestinationFolder="$(TargetDir)" SkipUnchangedFiles="true" />
+    <Copy SourceFiles="$(MSBuildThisFileDirectory)bin\libconfig-x86-v120-mt-gd-1_4_9_3.pdb" DestinationFolder="$(TargetDir)" SkipUnchangedFiles="true" />
   </Target>
   <Target Name="libconfig_AfterBuild_x64_v120_Dynamic_Release"
           Condition="'$(Platform)' == 'x64' And ('$(PlatformToolset)' == 'v120' Or '$(PlatformToolset)' == 'CTP_Nov2013') And '$(Linkage-libconfig)' == '' And $(Configuration.IndexOf('Release')) != -1"
           AfterTargets="libconfig_AfterBuild">
-    <Copy SourceFiles="$(MSBuildThisFileDirectory)bin\libconfig-x64-v120-mt-1_4_9_2.dll" DestinationFolder="$(TargetDir)" SkipUnchangedFiles="true" />
-    <Copy SourceFiles="$(MSBuildThisFileDirectory)bin\libconfig-x64-v120-mt-1_4_9_2.pdb" DestinationFolder="$(TargetDir)" SkipUnchangedFiles="true" />
+    <Copy SourceFiles="$(MSBuildThisFileDirectory)bin\libconfig-x64-v120-mt-1_4_9_3.dll" DestinationFolder="$(TargetDir)" SkipUnchangedFiles="true" />
+    <!--<Copy SourceFiles="$(MSBuildThisFileDirectory)bin\libconfig-x64-v120-mt-1_4_9_3.pdb" DestinationFolder="$(TargetDir)" SkipUnchangedFiles="true" />-->
   </Target>
   <Target Name="libconfig_AfterBuild_x64_v120_Dynamic_Debug"
           Condition="'$(Platform)' == 'x64' And ('$(PlatformToolset)' == 'v120' Or '$(PlatformToolset)' == 'CTP_Nov2013') And '$(Linkage-libconfig)' == '' And $(Configuration.IndexOf('Debug')) != -1"
           AfterTargets="libconfig_AfterBuild">
-    <Copy SourceFiles="$(MSBuildThisFileDirectory)bin\libconfig-x64-v120-mt-gd-1_4_9_2.dll" DestinationFolder="$(TargetDir)" SkipUnchangedFiles="true" />
-    <Copy SourceFiles="$(MSBuildThisFileDirectory)bin\libconfig-x64-v120-mt-gd-1_4_9_2.pdb" DestinationFolder="$(TargetDir)" SkipUnchangedFiles="true" />
+    <Copy SourceFiles="$(MSBuildThisFileDirectory)bin\libconfig-x64-v120-mt-gd-1_4_9_3.dll" DestinationFolder="$(TargetDir)" SkipUnchangedFiles="true" />
+    <Copy SourceFiles="$(MSBuildThisFileDirectory)bin\libconfig-x64-v120-mt-gd-1_4_9_3.pdb" DestinationFolder="$(TargetDir)" SkipUnchangedFiles="true" />
   </Target>
 
 <!--

@@ -16,7 +16,7 @@
     <metadata minClientVersion="2.5">
         <id>$(package.id)</id>
         <version>$(package.version)</version>
-        <title>Libconfig (v120)</title>
+        <title>libconfig_v120</title>
         <authors>Mark Lindner, Daniel Marjamäki, Andrew Tytula, Glenn Herteg, Eric Voskuil</authors>
         <owners>Eric Voskuil</owners>
         <licenseUrl>https://raw.github.com/evoskuil/libconfig/master/COPYING</licenseUrl>
@@ -33,7 +33,7 @@
     <files>
         <!-- targets -->
       
-        <file src="package.targets" target="build\\native\\package.targets" />
+        <file src="package.targets" target="build\\native\\$(package.id).targets" />
         <file src="package.xml" target="build\\native\\package.xml" />
 
         <!-- include -->
@@ -49,7 +49,7 @@
         <file src="..\\..\\bin\\Win32\\Debug\\$(package.namespace)\\$(package.target).dll" target="build\\native\\bin\\$(package.target)-x86-$(package.platformtoolset)-mt-gd-$(package.pathversion).dll" />
 
         <!-- x86 Debugging symbols (.pdb) -->
-        <file src="..\\..\\bin\\Win32\\Release\\$(package.namespace)\\$(package.target).pdb" target="build\\native\\bin\\$(package.target)-x86-$(package.platformtoolset)-mt-$(package.pathversion).pdb" />
+        <!--<file src="..\\..\\bin\\Win32\\Release\\$(package.namespace)\\$(package.target).pdb" target="build\\native\\bin\\$(package.target)-x86-$(package.platformtoolset)-mt-$(package.pathversion).pdb" />-->
         <file src="..\\..\\bin\\Win32\\Debug\\$(package.namespace)\\$(package.target).pdb" target="build\\native\\bin\\$(package.target)-x86-$(package.platformtoolset)-mt-gd-$(package.pathversion).pdb" />
 
         <!-- x86 Static libraries (.lib) -->
@@ -73,7 +73,7 @@
         <file src="..\\..\\bin\\x64\\Debug\\$(package.namespace)\\$(package.target).dll" target="build\\native\\bin\\$(package.target)-x64-$(package.platformtoolset)-mt-gd-$(package.pathversion).dll" />
 
         <!-- x64 Debugging symbols (.pdb) -->
-        <file src="..\\..\\bin\\x64\\Release\\$(package.namespace)\\$(package.target).pdb" target="build\\native\\bin\\$(package.target)-x64-$(package.platformtoolset)-mt-$(package.pathversion).pdb" />
+        <!--<file src="..\\..\\bin\\x64\\Release\\$(package.namespace)\\$(package.target).pdb" target="build\\native\\bin\\$(package.target)-x64-$(package.platformtoolset)-mt-$(package.pathversion).pdb" />-->
         <file src="..\\..\\bin\\x64\\Debug\\$(package.namespace)\\$(package.target).pdb" target="build\\native\\bin\\$(package.target)-x64-$(package.platformtoolset)-mt-gd-$(package.pathversion).pdb" />
 
         <!-- x64 Static libraries (.lib) -->
@@ -205,7 +205,7 @@
           Condition="'$\(Platform)' == 'Win32' And ('$\(PlatformToolset)' == '$(package.platformtoolset)' Or '$\(PlatformToolset)' == 'CTP_Nov2013') And '$\(Linkage-$(package.target))' == '' And $\(Configuration.IndexOf('Release')) != -1"
           AfterTargets="$(package.target)_AfterBuild">
     <Copy SourceFiles="$\(MSBuildThisFileDirectory)bin\\$(package.target)-x86-$(package.platformtoolset)-mt-$(package.pathversion).dll" DestinationFolder="$\(TargetDir)" SkipUnchangedFiles="true" />
-    <Copy SourceFiles="$\(MSBuildThisFileDirectory)bin\\$(package.target)-x86-$(package.platformtoolset)-mt-$(package.pathversion).pdb" DestinationFolder="$\(TargetDir)" SkipUnchangedFiles="true" />
+    <!--<Copy SourceFiles="$\(MSBuildThisFileDirectory)bin\\$(package.target)-x86-$(package.platformtoolset)-mt-$(package.pathversion).pdb" DestinationFolder="$\(TargetDir)" SkipUnchangedFiles="true" />-->
   </Target>
   <Target Name="$(package.target)_AfterBuild_Win32_$(package.platformtoolset)_Dynamic_Debug"
           Condition="'$\(Platform)' == 'Win32' And ('$\(PlatformToolset)' == '$(package.platformtoolset)' Or '$\(PlatformToolset)' == 'CTP_Nov2013') And '$\(Linkage-$(package.target))' == '' And $\(Configuration.IndexOf('Debug')) != -1"
@@ -217,7 +217,7 @@
           Condition="'$\(Platform)' == 'x64' And ('$\(PlatformToolset)' == '$(package.platformtoolset)' Or '$\(PlatformToolset)' == 'CTP_Nov2013') And '$\(Linkage-$(package.target))' == '' And $\(Configuration.IndexOf('Release')) != -1"
           AfterTargets="$(package.target)_AfterBuild">
     <Copy SourceFiles="$\(MSBuildThisFileDirectory)bin\\$(package.target)-x64-$(package.platformtoolset)-mt-$(package.pathversion).dll" DestinationFolder="$\(TargetDir)" SkipUnchangedFiles="true" />
-    <Copy SourceFiles="$\(MSBuildThisFileDirectory)bin\\$(package.target)-x64-$(package.platformtoolset)-mt-$(package.pathversion).pdb" DestinationFolder="$\(TargetDir)" SkipUnchangedFiles="true" />
+    <!--<Copy SourceFiles="$\(MSBuildThisFileDirectory)bin\\$(package.target)-x64-$(package.platformtoolset)-mt-$(package.pathversion).pdb" DestinationFolder="$\(TargetDir)" SkipUnchangedFiles="true" />-->
   </Target>
   <Target Name="$(package.target)_AfterBuild_x64_$(package.platformtoolset)_Dynamic_Debug"
           Condition="'$\(Platform)' == 'x64' And ('$\(PlatformToolset)' == '$(package.platformtoolset)' Or '$\(PlatformToolset)' == 'CTP_Nov2013') And '$\(Linkage-$(package.target))' == '' And $\(Configuration.IndexOf('Debug')) != -1"
