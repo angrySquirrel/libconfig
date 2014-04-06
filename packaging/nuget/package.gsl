@@ -16,7 +16,7 @@
     <metadata minClientVersion="2.5">
         <id>$(package.id)</id>
         <version>$(package.version)</version>
-        <title>libconfig_v120</title>
+        <title>$(package.id)</title>
         <authors>Mark Lindner, Daniel Marjamäki, Andrew Tytula, Glenn Herteg, Eric Voskuil</authors>
         <owners>Eric Voskuil</owners>
         <licenseUrl>https://raw.github.com/evoskuil/libconfig/master/COPYING</licenseUrl>
@@ -27,7 +27,7 @@
         <description>Libconfig is a compact, portable library for reading, manipulating, and writing structured configuration files. The library includes bindings for both the C and C++ languages, and works on Linux, Mac OS X, and other POSIX-compliant operating systems, as well as Windows. A complete manual with API documentation is included.</description>
         <summary>This is a fork of libconfig-1.4.9 by Mark Lindner and others, for Windows packaging. Supports Visual Studio 2013 (v120) and CTP_Nov2013 compilers.</summary>
         <releaseNotes>http://freecode.com/projects/$(package.target)duo/releases</releaseNotes>
-        <copyright>(c) 2005-2010 Mark A Lindner</copyright>
+        <copyright>Lesser GPL v2.1</copyright>
         <tags>native, libconfig, config, POSIX, C++</tags>
     </metadata>
     <files>
