@@ -23,7 +23,7 @@
         <projectUrl>https://github.com/evoskuil/libconfig</projectUrl>
         <iconUrl>http://a.fsdn.com/fm/images/fm_logo.png?1386111726</iconUrl>
         <requireLicenseAcceptance>true</requireLicenseAcceptance>
-        <developmentDependency>true</developmentDependency>
+        <developmentDependency>false</developmentDependency>
         <description>Libconfig is a compact, portable library for reading, manipulating, and writing structured configuration files. The library includes bindings for both the C and C++ languages, and works on Linux, Mac OS X, and other POSIX-compliant operating systems, as well as Windows. A complete manual with API documentation is included.</description>
         <summary>This is a fork of libconfig-1.4.9 by Mark Lindner and others, for Windows packaging. Supports Visual Studio 2013 (v120) and CTP_Nov2013 compilers.</summary>
         <releaseNotes>http://freecode.com/projects/$(package.target)duo/releases</releaseNotes>
