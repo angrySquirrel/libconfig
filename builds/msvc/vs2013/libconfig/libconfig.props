@@ -7,30 +7,17 @@
     <RunCodeAnalysis>false</RunCodeAnalysis>
   </PropertyGroup>
 
+  <!-- Configuration -->
+  
   <ItemDefinitionGroup>
     <ClCompile>
-      <AdditionalIncludeDirectories>$(ProjectDir)..\..\..\..\include\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <DisableSpecificWarnings>4244;4290;4996;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <AdditionalIncludeDirectories>$(RepoRoot)include\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <EnablePREfast>false</EnablePREfast>
+      <DisableSpecificWarnings>4244;4290;4996;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <DisableSpecificWarnings Condition="'$(Platform)'=='x64'">4267;%(DisableSpecificWarnings)</DisableSpecificWarnings>
       <PreprocessorDefinitions>YY_NO_UNISTD_H;YY_USE_CONST;_STDLIB_H;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-    </ClCompile>
-  </ItemDefinitionGroup>
-
-  <ItemDefinitionGroup Condition="'$(Platform)'=='x64'">
-    <ClCompile>
-      <DisableSpecificWarnings>4267;%(DisableSpecificWarnings)</DisableSpecificWarnings>
-    </ClCompile>
-  </ItemDefinitionGroup>
-
-  <ItemDefinitionGroup Condition="'$(ConfigurationType)'=='DynamicLibrary'">
-    <ClCompile>
-      <PreprocessorDefinitions>LIBCONFIG_EXPORTS;LIBCONFIGXX_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-    </ClCompile>
-  </ItemDefinitionGroup>
-
-  <ItemDefinitionGroup Condition="'$(ConfigurationType)'=='StaticLibrary'">
-    <ClCompile>
-      <PreprocessorDefinitions>LIBCONFIG_STATIC;LIBCONFIGXX_STATIC;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(ConfigurationType)'=='DynamicLibrary'">LIBCONFIG_EXPORTS;LIBCONFIGXX_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(ConfigurationType)'=='StaticLibrary'">LIBCONFIG_STATIC;LIBCONFIGXX_STATIC;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
   </ItemDefinitionGroup>
 
