@@ -29,6 +29,11 @@
         <releaseNotes>http://freecode.com/projects/$(package.target)duo/releases</releaseNotes>
         <copyright>Lesser GPL v2.1</copyright>
         <tags>native, libconfig, config, POSIX, C++</tags>
+        <dependencies>
+.for dependency
+            <dependency id="$(id)" version="$(version)" />
+.endfor
+        </dependencies>
     </metadata>
     <files>
         <!-- targets -->
@@ -45,52 +50,52 @@
         <!-- libraries -->
 
         <!-- x86 Dynamic libraries (.dll) -->
-        <file src="..\\..\\bin\\Win32\\Release\\$(package.namespace)\\$(package.target).dll" target="build\\native\\bin\\$(package.target)-x86-$(package.platformtoolset)-mt-$(package.pathversion).dll" />
-        <file src="..\\..\\bin\\Win32\\Debug\\$(package.namespace)\\$(package.target).dll" target="build\\native\\bin\\$(package.target)-x86-$(package.platformtoolset)-mt-gd-$(package.pathversion).dll" />
+        <file src="..\\..\\bin\\Win32\\Release\\$(package.platformtoolset)\\dynamic\\$(package.target).dll" target="build\\native\\bin\\$(package.target)-x86-$(package.platformtoolset)-mt-$(package.pathversion).dll" />
+        <file src="..\\..\\bin\\Win32\\Debug\\$(package.platformtoolset)\\dynamic\\$(package.target).dll" target="build\\native\\bin\\$(package.target)-x86-$(package.platformtoolset)-mt-gd-$(package.pathversion).dll" />
 
         <!-- x86 Debugging symbols (.pdb) -->
-        <!--<file src="..\\..\\bin\\Win32\\Release\\$(package.namespace)\\$(package.target).pdb" target="build\\native\\bin\\$(package.target)-x86-$(package.platformtoolset)-mt-$(package.pathversion).pdb" />-->
-        <file src="..\\..\\bin\\Win32\\Debug\\$(package.namespace)\\$(package.target).pdb" target="build\\native\\bin\\$(package.target)-x86-$(package.platformtoolset)-mt-gd-$(package.pathversion).pdb" />
-
-        <!-- x86 Static libraries (.lib) -->
-        <file src="..\\..\\bin\\Win32\\Release\\$(package.namespace)\\$(package.target).lib" target="build\\native\\bin\\$(package.target)-x86-$(package.platformtoolset)-mt-s-$(package.pathversion).lib" />
-        <file src="..\\..\\bin\\Win32\\Debug\\$(package.namespace)\\$(package.target).lib" target="build\\native\\bin\\$(package.target)-x86-$(package.platformtoolset)-mt-sgd-$(package.pathversion).lib" />
-
-        <!-- x86 Static link time code generation libraries (.ltcg.lib) -->
-        <file src="..\\..\\bin\\Win32\\Release\\$(package.namespace)\\$(package.target).ltcg.lib" target="build\\native\\bin\\$(package.target)-x86-$(package.platformtoolset)-mt-s-$(package.pathversion).ltcg.lib" />
-        <file src="..\\..\\bin\\Win32\\Debug\\$(package.namespace)\\$(package.target).ltcg.lib" target="build\\native\\bin\\$(package.target)-x86-$(package.platformtoolset)-mt-sgd-$(package.pathversion).ltcg.lib" />
+        <!--<file src="..\\..\\bin\\Win32\\Release\\$(package.platformtoolset)\\dynamic\\$(package.target).pdb" target="build\\native\\bin\\$(package.target)-x86-$(package.platformtoolset)-mt-$(package.pathversion).pdb" />-->
+        <file src="..\\..\\bin\\Win32\\Debug\\$(package.platformtoolset)\\dynamic\\$(package.target).pdb" target="build\\native\\bin\\$(package.target)-x86-$(package.platformtoolset)-mt-gd-$(package.pathversion).pdb" />
 
         <!-- x86 Import libraries (.imp.lib) -->
-        <file src="..\\..\\bin\\Win32\\Release\\$(package.namespace)\\$(package.target).imp.lib" target="build\\native\\bin\\$(package.target)-x86-$(package.platformtoolset)-mt-$(package.pathversion).imp.lib" />
-        <file src="..\\..\\bin\\Win32\\Debug\\$(package.namespace)\\$(package.target).imp.lib" target="build\\native\\bin\\$(package.target)-x86-$(package.platformtoolset)-mt-gd-$(package.pathversion).imp.lib" />
+        <file src="..\\..\\bin\\Win32\\Release\\$(package.platformtoolset)\\dynamic\\$(package.target).lib" target="build\\native\\bin\\$(package.target)-x86-$(package.platformtoolset)-mt-$(package.pathversion).imp.lib" />
+        <file src="..\\..\\bin\\Win32\\Debug\\$(package.platformtoolset)\\dynamic\\$(package.target).lib" target="build\\native\\bin\\$(package.target)-x86-$(package.platformtoolset)-mt-gd-$(package.pathversion).imp.lib" />
 
         <!-- x86 Export libraries (.exp) -->
-        <file src="..\\..\\bin\\Win32\\Release\\$(package.namespace)\\$(package.target).imp.exp" target="build\\native\\bin\\$(package.target)-x86-$(package.platformtoolset)-mt-$(package.pathversion).exp" />
-        <file src="..\\..\\bin\\Win32\\Debug\\$(package.namespace)\\$(package.target).imp.exp" target="build\\native\\bin\\$(package.target)-x86-$(package.platformtoolset)-mt-gd-$(package.pathversion).exp" />
+        <file src="..\\..\\bin\\Win32\\Release\\$(package.platformtoolset)\\dynamic\\$(package.target).exp" target="build\\native\\bin\\$(package.target)-x86-$(package.platformtoolset)-mt-$(package.pathversion).exp" />
+        <file src="..\\..\\bin\\Win32\\Debug\\$(package.platformtoolset)\\dynamic\\$(package.target).exp" target="build\\native\\bin\\$(package.target)-x86-$(package.platformtoolset)-mt-gd-$(package.pathversion).exp" />
+
+        <!-- x86 Static libraries (.lib) -->
+        <file src="..\\..\\bin\\Win32\\Release\\$(package.platformtoolset)\\static\\$(package.target).lib" target="build\\native\\bin\\$(package.target)-x86-$(package.platformtoolset)-mt-s-$(package.pathversion).lib" />
+        <file src="..\\..\\bin\\Win32\\Debug\\$(package.platformtoolset)\\static\\$(package.target).lib" target="build\\native\\bin\\$(package.target)-x86-$(package.platformtoolset)-mt-sgd-$(package.pathversion).lib" />
+
+        <!-- x86 Static link time code generation libraries (.ltcg.lib) -->
+        <file src="..\\..\\bin\\Win32\\Release\\$(package.platformtoolset)\\ltcg\\$(package.target).lib" target="build\\native\\bin\\$(package.target)-x86-$(package.platformtoolset)-mt-s-$(package.pathversion).ltcg.lib" />
+        <file src="..\\..\\bin\\Win32\\Debug\\$(package.platformtoolset)\\ltcg\\$(package.target).lib" target="build\\native\\bin\\$(package.target)-x86-$(package.platformtoolset)-mt-sgd-$(package.pathversion).ltcg.lib" />
 
         <!-- x64 Dynamic libraries (.dll) -->
-        <file src="..\\..\\bin\\x64\\Release\\$(package.namespace)\\$(package.target).dll" target="build\\native\\bin\\$(package.target)-x64-$(package.platformtoolset)-mt-$(package.pathversion).dll" />
-        <file src="..\\..\\bin\\x64\\Debug\\$(package.namespace)\\$(package.target).dll" target="build\\native\\bin\\$(package.target)-x64-$(package.platformtoolset)-mt-gd-$(package.pathversion).dll" />
+        <file src="..\\..\\bin\\x64\\Release\\$(package.platformtoolset)\\dynamic\\$(package.target).dll" target="build\\native\\bin\\$(package.target)-x64-$(package.platformtoolset)-mt-$(package.pathversion).dll" />
+        <file src="..\\..\\bin\\x64\\Debug\\$(package.platformtoolset)\\dynamic\\$(package.target).dll" target="build\\native\\bin\\$(package.target)-x64-$(package.platformtoolset)-mt-gd-$(package.pathversion).dll" />
 
         <!-- x64 Debugging symbols (.pdb) -->
-        <!--<file src="..\\..\\bin\\x64\\Release\\$(package.namespace)\\$(package.target).pdb" target="build\\native\\bin\\$(package.target)-x64-$(package.platformtoolset)-mt-$(package.pathversion).pdb" />-->
-        <file src="..\\..\\bin\\x64\\Debug\\$(package.namespace)\\$(package.target).pdb" target="build\\native\\bin\\$(package.target)-x64-$(package.platformtoolset)-mt-gd-$(package.pathversion).pdb" />
-
-        <!-- x64 Static libraries (.lib) -->
-        <file src="..\\..\\bin\\x64\\Release\\$(package.namespace)\\$(package.target).lib" target="build\\native\\bin\\$(package.target)-x64-$(package.platformtoolset)-mt-s-$(package.pathversion).lib" />
-        <file src="..\\..\\bin\\x64\\Debug\\$(package.namespace)\\$(package.target).lib" target="build\\native\\bin\\$(package.target)-x64-$(package.platformtoolset)-mt-sgd-$(package.pathversion).lib" />
-
-        <!-- x64 Static link time code generation libraries (.ltcg.lib) -->
-        <file src="..\\..\\bin\\Win32\\Release\\$(package.namespace)\\$(package.target).ltcg.lib" target="build\\native\\bin\\$(package.target)-x64-$(package.platformtoolset)-mt-s-$(package.pathversion).ltcg.lib" />
-        <file src="..\\..\\bin\\Win32\\Debug\\$(package.namespace)\\$(package.target).ltcg.lib" target="build\\native\\bin\\$(package.target)-x64-$(package.platformtoolset)-mt-sgd-$(package.pathversion).ltcg.lib" />
+        <!--<file src="..\\..\\bin\\x64\\Release\\$(package.platformtoolset)\\dynamic\\$(package.target).pdb" target="build\\native\\bin\\$(package.target)-x64-$(package.platformtoolset)-mt-$(package.pathversion).pdb" />-->
+        <file src="..\\..\\bin\\x64\\Debug\\$(package.platformtoolset)\\dynamic\\$(package.target).pdb" target="build\\native\\bin\\$(package.target)-x64-$(package.platformtoolset)-mt-gd-$(package.pathversion).pdb" />
 
         <!-- x64 Import libraries (.imp.lib) -->
-        <file src="..\\..\\bin\\x64\\Release\\$(package.namespace)\\$(package.target).imp.lib" target="build\\native\\bin\\$(package.target)-x64-$(package.platformtoolset)-mt-$(package.pathversion).imp.lib" />
-        <file src="..\\..\\bin\\x64\\Debug\\$(package.namespace)\\$(package.target).imp.lib" target="build\\native\\bin\\$(package.target)-x64-$(package.platformtoolset)-mt-gd-$(package.pathversion).imp.lib" />
+        <file src="..\\..\\bin\\x64\\Release\\$(package.platformtoolset)\\dynamic\\$(package.target).lib" target="build\\native\\bin\\$(package.target)-x64-$(package.platformtoolset)-mt-$(package.pathversion).imp.lib" />
+        <file src="..\\..\\bin\\x64\\Debug\\$(package.platformtoolset)\\dynamic\\$(package.target).lib" target="build\\native\\bin\\$(package.target)-x64-$(package.platformtoolset)-mt-gd-$(package.pathversion).imp.lib" />
 
         <!-- x64 Export libraries (.exp) -->
-        <file src="..\\..\\bin\\x64\\Release\\$(package.namespace)\\$(package.target).imp.exp" target="build\\native\\bin\\$(package.target)-x64-$(package.platformtoolset)-mt-$(package.pathversion).exp" />
-        <file src="..\\..\\bin\\x64\\Debug\\$(package.namespace)\\$(package.target).imp.exp" target="build\\native\\bin\\$(package.target)-x64-$(package.platformtoolset)-mt-gd-$(package.pathversion).exp" />
+        <file src="..\\..\\bin\\x64\\Release\\$(package.platformtoolset)\\dynamic\\$(package.target).exp" target="build\\native\\bin\\$(package.target)-x64-$(package.platformtoolset)-mt-$(package.pathversion).exp" />
+        <file src="..\\..\\bin\\x64\\Debug\\$(package.platformtoolset)\\dynamic\\$(package.target).exp" target="build\\native\\bin\\$(package.target)-x64-$(package.platformtoolset)-mt-gd-$(package.pathversion).exp" />
+
+        <!-- x64 Static libraries (.lib) -->
+        <file src="..\\..\\bin\\x64\\Release\\$(package.platformtoolset)\\static\\$(package.target).lib" target="build\\native\\bin\\$(package.target)-x64-$(package.platformtoolset)-mt-s-$(package.pathversion).lib" />
+        <file src="..\\..\\bin\\x64\\Debug\\$(package.platformtoolset)\\static\\$(package.target).lib" target="build\\native\\bin\\$(package.target)-x64-$(package.platformtoolset)-mt-sgd-$(package.pathversion).lib" />
+
+        <!-- x64 Static link time code generation libraries (.ltcg.lib) -->
+        <file src="..\\..\\bin\\Win32\\Release\\$(package.platformtoolset)\\ltcg\\$(package.target).lib" target="build\\native\\bin\\$(package.target)-x64-$(package.platformtoolset)-mt-s-$(package.pathversion).ltcg.lib" />
+        <file src="..\\..\\bin\\Win32\\Debug\\$(package.platformtoolset)\\ltcg\\$(package.target).lib" target="build\\native\\bin\\$(package.target)-x64-$(package.platformtoolset)-mt-sgd-$(package.pathversion).ltcg.lib" />
         
         <!-- docs -->
         
@@ -111,7 +116,7 @@
 #   GENERATED SOURCE CODE, DO NOT EDIT EXCEPT EXPERIMENTALLY    #
 #################################################################
 -->
-<Project ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
 
   <!-- user interface -->
   <ItemGroup>
@@ -204,26 +209,26 @@
   <Target Name="$(package.target)_AfterBuild_Win32_$(package.platformtoolset)_Dynamic_Release"
           Condition="'$\(Platform)' == 'Win32' And ('$\(PlatformToolset)' == '$(package.platformtoolset)' Or '$\(PlatformToolset)' == 'CTP_Nov2013') And '$\(Linkage-$(package.target))' == 'dynamic' And $\(Configuration.IndexOf('Release')) != -1"
           AfterTargets="$(package.target)_AfterBuild">
-    <Copy SourceFiles="$\(MSBuildThisFileDirectory)bin\\$(package.target)-x86-$(package.platformtoolset)-mt-$(package.pathversion).dll" DestinationFolder="$\(TargetDir)" SkipUnchangedFiles="true" />
-    <!--<Copy SourceFiles="$\(MSBuildThisFileDirectory)bin\\$(package.target)-x86-$(package.platformtoolset)-mt-$(package.pathversion).pdb" DestinationFolder="$\(TargetDir)" SkipUnchangedFiles="true" />-->
+    <Copy SourceFiles="$\(MSBuildThisFileDirectory)bin\\$(package.target)-x86-$(package.platformtoolset)-mt-$(package.pathversion).dll" DestinationFiles="$\(TargetDir)$(package.target).dll" SkipUnchangedFiles="true" />
+    <!--<Copy SourceFiles="$\(MSBuildThisFileDirectory)bin\\$(package.target)-x86-$(package.platformtoolset)-mt-$(package.pathversion).pdb" DestinationFiles="$\(TargetDir)$(package.target).pdb" SkipUnchangedFiles="true" />-->
   </Target>
   <Target Name="$(package.target)_AfterBuild_Win32_$(package.platformtoolset)_Dynamic_Debug"
           Condition="'$\(Platform)' == 'Win32' And ('$\(PlatformToolset)' == '$(package.platformtoolset)' Or '$\(PlatformToolset)' == 'CTP_Nov2013') And '$\(Linkage-$(package.target))' == 'dynamic' And $\(Configuration.IndexOf('Debug')) != -1"
           AfterTargets="$(package.target)_AfterBuild">
-    <Copy SourceFiles="$\(MSBuildThisFileDirectory)bin\\$(package.target)-x86-$(package.platformtoolset)-mt-gd-$(package.pathversion).dll" DestinationFolder="$\(TargetDir)" SkipUnchangedFiles="true" />
-    <Copy SourceFiles="$\(MSBuildThisFileDirectory)bin\\$(package.target)-x86-$(package.platformtoolset)-mt-gd-$(package.pathversion).pdb" DestinationFolder="$\(TargetDir)" SkipUnchangedFiles="true" />
+    <Copy SourceFiles="$\(MSBuildThisFileDirectory)bin\\$(package.target)-x86-$(package.platformtoolset)-mt-gd-$(package.pathversion).dll" DestinationFiles="$\(TargetDir)$(package.target).dll" SkipUnchangedFiles="true" />
+    <Copy SourceFiles="$\(MSBuildThisFileDirectory)bin\\$(package.target)-x86-$(package.platformtoolset)-mt-gd-$(package.pathversion).pdb" DestinationFiles="$\(TargetDir)$(package.target).pdb" SkipUnchangedFiles="true" />
   </Target>
   <Target Name="$(package.target)_AfterBuild_x64_$(package.platformtoolset)_Dynamic_Release"
           Condition="'$\(Platform)' == 'x64' And ('$\(PlatformToolset)' == '$(package.platformtoolset)' Or '$\(PlatformToolset)' == 'CTP_Nov2013') And '$\(Linkage-$(package.target))' == 'dynamic' And $\(Configuration.IndexOf('Release')) != -1"
           AfterTargets="$(package.target)_AfterBuild">
-    <Copy SourceFiles="$\(MSBuildThisFileDirectory)bin\\$(package.target)-x64-$(package.platformtoolset)-mt-$(package.pathversion).dll" DestinationFolder="$\(TargetDir)" SkipUnchangedFiles="true" />
-    <!--<Copy SourceFiles="$\(MSBuildThisFileDirectory)bin\\$(package.target)-x64-$(package.platformtoolset)-mt-$(package.pathversion).pdb" DestinationFolder="$\(TargetDir)" SkipUnchangedFiles="true" />-->
+    <Copy SourceFiles="$\(MSBuildThisFileDirectory)bin\\$(package.target)-x64-$(package.platformtoolset)-mt-$(package.pathversion).dll" DestinationFiles="$\(TargetDir)$(package.target).dll" SkipUnchangedFiles="true" />
+    <!--<Copy SourceFiles="$\(MSBuildThisFileDirectory)bin\\$(package.target)-x64-$(package.platformtoolset)-mt-$(package.pathversion).pdb" DestinationFiles="$\(TargetDir)$(package.target).pdb" SkipUnchangedFiles="true" />-->
   </Target>
   <Target Name="$(package.target)_AfterBuild_x64_$(package.platformtoolset)_Dynamic_Debug"
           Condition="'$\(Platform)' == 'x64' And ('$\(PlatformToolset)' == '$(package.platformtoolset)' Or '$\(PlatformToolset)' == 'CTP_Nov2013') And '$\(Linkage-$(package.target))' == 'dynamic' And $\(Configuration.IndexOf('Debug')) != -1"
           AfterTargets="$(package.target)_AfterBuild">
-    <Copy SourceFiles="$\(MSBuildThisFileDirectory)bin\\$(package.target)-x64-$(package.platformtoolset)-mt-gd-$(package.pathversion).dll" DestinationFolder="$\(TargetDir)" SkipUnchangedFiles="true" />
-    <Copy SourceFiles="$\(MSBuildThisFileDirectory)bin\\$(package.target)-x64-$(package.platformtoolset)-mt-gd-$(package.pathversion).pdb" DestinationFolder="$\(TargetDir)" SkipUnchangedFiles="true" />
+    <Copy SourceFiles="$\(MSBuildThisFileDirectory)bin\\$(package.target)-x64-$(package.platformtoolset)-mt-gd-$(package.pathversion).dll" DestinationFiles="$\(TargetDir)$(package.target).dll" SkipUnchangedFiles="true" />
+    <Copy SourceFiles="$\(MSBuildThisFileDirectory)bin\\$(package.target)-x64-$(package.platformtoolset)-mt-gd-$(package.pathversion).pdb" DestinationFiles="$\(TargetDir)$(package.target).pdb" SkipUnchangedFiles="true" />
   </Target>
 
 <!--
