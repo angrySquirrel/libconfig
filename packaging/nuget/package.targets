@@ -4,7 +4,7 @@
 #   GENERATED SOURCE CODE, DO NOT EDIT EXCEPT EXPERIMENTALLY    #
 #################################################################
 -->
-<Project ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
 
   <!-- user interface -->
   <ItemGroup>
@@ -97,26 +97,26 @@
   <Target Name="libconfig_AfterBuild_Win32_v120_Dynamic_Release"
           Condition="'$(Platform)' == 'Win32' And ('$(PlatformToolset)' == 'v120' Or '$(PlatformToolset)' == 'CTP_Nov2013') And '$(Linkage-libconfig)' == 'dynamic' And $(Configuration.IndexOf('Release')) != -1"
           AfterTargets="libconfig_AfterBuild">
-    <Copy SourceFiles="$(MSBuildThisFileDirectory)bin\libconfig-x86-v120-mt-1_4_9_4.dll" DestinationFolder="$(TargetDir)" SkipUnchangedFiles="true" />
-    <!--<Copy SourceFiles="$(MSBuildThisFileDirectory)bin\libconfig-x86-v120-mt-1_4_9_4.pdb" DestinationFolder="$(TargetDir)" SkipUnchangedFiles="true" />-->
+    <Copy SourceFiles="$(MSBuildThisFileDirectory)bin\libconfig-x86-v120-mt-1_4_9_4.dll" DestinationFiles="$(TargetDir)libconfig.dll" SkipUnchangedFiles="true" />
+    <!--<Copy SourceFiles="$(MSBuildThisFileDirectory)bin\libconfig-x86-v120-mt-1_4_9_4.pdb" DestinationFiles="$(TargetDir)libconfig.pdb" SkipUnchangedFiles="true" />-->
   </Target>
   <Target Name="libconfig_AfterBuild_Win32_v120_Dynamic_Debug"
           Condition="'$(Platform)' == 'Win32' And ('$(PlatformToolset)' == 'v120' Or '$(PlatformToolset)' == 'CTP_Nov2013') And '$(Linkage-libconfig)' == 'dynamic' And $(Configuration.IndexOf('Debug')) != -1"
           AfterTargets="libconfig_AfterBuild">
-    <Copy SourceFiles="$(MSBuildThisFileDirectory)bin\libconfig-x86-v120-mt-gd-1_4_9_4.dll" DestinationFolder="$(TargetDir)" SkipUnchangedFiles="true" />
-    <Copy SourceFiles="$(MSBuildThisFileDirectory)bin\libconfig-x86-v120-mt-gd-1_4_9_4.pdb" DestinationFolder="$(TargetDir)" SkipUnchangedFiles="true" />
+    <Copy SourceFiles="$(MSBuildThisFileDirectory)bin\libconfig-x86-v120-mt-gd-1_4_9_4.dll" DestinationFiles="$(TargetDir)libconfig.dll" SkipUnchangedFiles="true" />
+    <Copy SourceFiles="$(MSBuildThisFileDirectory)bin\libconfig-x86-v120-mt-gd-1_4_9_4.pdb" DestinationFiles="$(TargetDir)libconfig.pdb" SkipUnchangedFiles="true" />
   </Target>
   <Target Name="libconfig_AfterBuild_x64_v120_Dynamic_Release"
           Condition="'$(Platform)' == 'x64' And ('$(PlatformToolset)' == 'v120' Or '$(PlatformToolset)' == 'CTP_Nov2013') And '$(Linkage-libconfig)' == 'dynamic' And $(Configuration.IndexOf('Release')) != -1"
           AfterTargets="libconfig_AfterBuild">
-    <Copy SourceFiles="$(MSBuildThisFileDirectory)bin\libconfig-x64-v120-mt-1_4_9_4.dll" DestinationFolder="$(TargetDir)" SkipUnchangedFiles="true" />
-    <!--<Copy SourceFiles="$(MSBuildThisFileDirectory)bin\libconfig-x64-v120-mt-1_4_9_4.pdb" DestinationFolder="$(TargetDir)" SkipUnchangedFiles="true" />-->
+    <Copy SourceFiles="$(MSBuildThisFileDirectory)bin\libconfig-x64-v120-mt-1_4_9_4.dll" DestinationFiles="$(TargetDir)libconfig.dll" SkipUnchangedFiles="true" />
+    <!--<Copy SourceFiles="$(MSBuildThisFileDirectory)bin\libconfig-x64-v120-mt-1_4_9_4.pdb" DestinationFiles="$(TargetDir)libconfig.pdb" SkipUnchangedFiles="true" />-->
   </Target>
   <Target Name="libconfig_AfterBuild_x64_v120_Dynamic_Debug"
           Condition="'$(Platform)' == 'x64' And ('$(PlatformToolset)' == 'v120' Or '$(PlatformToolset)' == 'CTP_Nov2013') And '$(Linkage-libconfig)' == 'dynamic' And $(Configuration.IndexOf('Debug')) != -1"
           AfterTargets="libconfig_AfterBuild">
-    <Copy SourceFiles="$(MSBuildThisFileDirectory)bin\libconfig-x64-v120-mt-gd-1_4_9_4.dll" DestinationFolder="$(TargetDir)" SkipUnchangedFiles="true" />
-    <Copy SourceFiles="$(MSBuildThisFileDirectory)bin\libconfig-x64-v120-mt-gd-1_4_9_4.pdb" DestinationFolder="$(TargetDir)" SkipUnchangedFiles="true" />
+    <Copy SourceFiles="$(MSBuildThisFileDirectory)bin\libconfig-x64-v120-mt-gd-1_4_9_4.dll" DestinationFiles="$(TargetDir)libconfig.dll" SkipUnchangedFiles="true" />
+    <Copy SourceFiles="$(MSBuildThisFileDirectory)bin\libconfig-x64-v120-mt-gd-1_4_9_4.pdb" DestinationFiles="$(TargetDir)libconfig.pdb" SkipUnchangedFiles="true" />
   </Target>
 
 <!--
